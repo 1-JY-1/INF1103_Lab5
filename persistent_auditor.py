@@ -8,3 +8,30 @@ current_inventory = 0
 inventory = []
 inventory = functions.load_inventory(inventory)
 
+print("===========================================================================")
+print("INVENTORY MANAGEMENT SYSTEM")
+print("===========================================================================")
+
+# print("===========================================================================")
+# print("Welcome to the Smart Inventory Auditor!")
+# print("You can add items to the inventory or quit the program.")
+# print("The maximum inventory limit is 500 items.")
+
+# current inventory is {current_inventory}
+
+while toQuit == False:
+
+
+    print("\n================================= Menu ====================================")
+
+    print("1. Display All Products\n2. Add Product\n3. Update Stock\n4. Search Product\n5. Save Inventory\n6. Exit")
+
+    user_input = input("Your choice: ")
+
+    toQuit, inventory, rejectedEntries = functions.get_valid_input(user_input, inventory, rejectedEntries)
+
+    # print("Toquit:", toQuit)
+    # print("Inventory:", current_inventory)
+    # print("Rejected Entries:", rejectedEntries)
+
+
