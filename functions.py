@@ -86,8 +86,6 @@ def add_item_to_inventory(inventory, rejectedEntries):
 
 def update_stock(inventory, rejectedEntries):
 
-    print(inventory)
-
     try:
         update_id = int(input("Enter the product ID to update: "))
         for item in inventory:
