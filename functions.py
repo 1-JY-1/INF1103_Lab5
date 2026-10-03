@@ -81,10 +81,12 @@ def add_item_to_inventory(inventory, rejectedEntries):
         print("Invalid input. Please enter a valid product stock.")
         return inventory, rejectedEntries
 
-    inventory.append((add_id, add_product, add_price, add_stock))
+    inventory.append([add_id, add_product, add_price, add_stock])
     return inventory, rejectedEntries
 
 def update_stock(inventory, rejectedEntries):
+
+    print(inventory)
 
     try:
         update_id = int(input("Enter the product ID to update: "))

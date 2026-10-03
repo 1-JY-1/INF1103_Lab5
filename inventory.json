@@ -17,6 +17,12 @@
             "name": "Tablet",
             "price": 120,
             "stock": 75
+        },
+        {
+            "ID": 4,
+            "name": "Desktop",
+            "price": 2500.0,
+            "stock": 400
         }
     ]
 }
